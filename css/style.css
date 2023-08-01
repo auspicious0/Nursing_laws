@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Nanum+Pen+Script&display=swap');
+
+*{
+    margin:0; /* 마진 값 초기화*/
+    padding:0; 
+    box-sizing:border-box;/*뱍스영역은 테두리까지*/
+}
+
+a {
+    text-decoration: none; /*밑줄 감추기*/
+}
+ul {
+    list-style: none; /*불릿 기호 보이지 않게하기*/
+}
+#container{
+    margin: 0 auto;
+    width:90%;
+}
+
+/* 헤더 영역 */
+
+header{
+    width:100%;
+    height: 100px;
+    background-color: #07c;
+}
+
+/* 로고 영역 */
+
+#logo {
+    font-family: 'Caveat', cursive;
+    float: left;
+    width:20%;
+    height: 100px;
+    line-height: 100px; /*height 값과 같게 만들어서 세로로 중간ㅇ 오도록 함*/
+    padding-left: 1%; /*왼쪽 페딩 지정*/
+    font-size: 1.8vw;
+}
+
+/* 내비게이션 영역  */
+
+nav {
+    float: right;
+    width: 75%;
+    height: 100px;
+    padding-top:40px;
+}
+
+/*네비게이션 메뉴 속성*/
+#topMenu {
+    height: 60px;
+}
+#topMenu > li{
+    float: left; /* 메뉴 항목을 왼쪽으로 플로팅*/   
+    position:relative; /*서브 메뉴를 absolute로 만들기 위해 부모 요소를 relative로 지정*/
+}
+
+#topMenu >li > a{
+    display: block; /* 링크 텍스트는 블록으로 */
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 1px #07c;
+    padding: 20px 60px;
+}
+#topMenu >li > a> span{
+    font-size:0.5em; /*서브 메뉴 화살표*/
+}
+#topMenu >li>a:hover {
+    color: #000;
+    text-shadow: 0 -1px #07c;
+}
+#topMenu>li>ul{
+    display:none;/* 처음에는 안 보임 */
+    position: absolute; /* 서브 메뉴 포지셔닝*/
+    width: 160px;
+    background-color: rgba(255,255,255,0.6);/*배경 색 투명*/
+    left: 0;
+    margin: 0;
+}
+#topMenu >li>ul>li{
+    padding: 10px 10px 10px 30px;
+}
+#topMenu>li>ul>li>a{
+    font-size: 14px;
+    padding: 10px;
+    color:#000;
+}
+#topMenu>li:hover>ul{
+    display: block;/*메인 메뉴 항목 위로 오버하면 표시*/
+    z-index:10; /*가리지 않게 조정*/
+}
+#topMenu >li > ul> li>a:hover{
+    color:#f00; /* 서브 메뉴 마우스 오버하면 색상 변경*/
+}
+
+/* 이미지 슬라이드 쇼 영역 */
+
+#slideShow {
+    clear: both; /* 플로팅 해제  */
+    width: 100%; /* 너비  */
+    height: 300px;
+    background-color: orange;
+    overflow: hidden; /* 영역 넘치면 감춤 */
+}
+
+/* 콘텐츠 영역 */
+
+#contents{
+    width: 100%;
+    height:300px;
+}
+
+/* 탭 메뉴 영역  */
+#tabMenu {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: violet;
+}
+
+/* 퀵 링크 영역  */
+#links {
+    float:right;
+    width: 50%;
+    height: 100%;
+    background-color: skyblue;;
+}
+
+/* 푸터 영역  */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
