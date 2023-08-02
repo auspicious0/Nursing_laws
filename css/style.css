@@ -81,7 +81,7 @@ nav {
     display:none;/* 처음에는 안 보임 */
     position: absolute; /* 서브 메뉴 포지셔닝*/
     width: 160px;
-    background-color: rgba(255,255,255,0.6);/*배경 색 투명*/
+    background-color: rgba(54, 31, 31, 0.6);/*배경 색 투명*/
     left: 0;
     margin: 0;
 }
@@ -91,7 +91,7 @@ nav {
 #topMenu>li>ul>li>a{
     font-size: 14px;
     padding: 10px;
-    color:#000;
+    color:#f8f1f1;
 }
 #topMenu>li:hover>ul{
     display: block;/*메인 메뉴 항목 위로 오버하면 표시*/
