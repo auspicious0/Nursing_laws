@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nursing laws around the world</title>
+    <title>The reality of nurses in Korea</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,30 +16,62 @@
             </div>
             <nav>
                 <ul id="topMenu">
-                    <li><a href="#">단체 여행 <span>▼</span></a>
+                    <li><a href="#">harassment<span>▼</span></a>
                         <ul>
-                            <li><a href="#">회사 연수</a></li>
-                            <li><a href="#">수학 여행</a></li>
+                            <li><a href="http://www.mediwelfare.com/news/articleView.html?idxno=191">employees</a></li>
+                            <li><a href="https://www.newsthevoice.com/news/articleView.html?idxno=17267">patient</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">맞춤 여행 <span>▼</span></a>
+                    <li><a href="#">Salary<span>▼</span></a>
                         <ul>
-                            <li><a href="#">4.3 평화 기행</a></li>
-                            <li><a href="#">곶자와 체험</a></li>
-                            <li><a href="#">힐링 워크숍</a></li>
+                            <li><a href="https://www.thedaysnews.co.kr/news/articleView.html?idxno=5400">starvation</a></li>
+                            <li><a href="https://www.donga.com/news/Society/article/all/20230614/119753443/1">escape to 美</a></li>
+                            <li><a href="https://29street.donga.com/article/all/67/3183205/1">escape to AU</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">갤러리</a></li>
-                    <li><a href="#">문의하기</a></li>
+                    <li><a href="https://www.dailypharm.com/Users/News/NewsView.html?ID=300540">Scope of work</a></li>
+                    <li><a href="http://www.bosa.co.kr/news/articleView.html?idxno=2105214">Reality</a></li>
                 </ul>
             </nav>
         </header>
         <div id="slideShow">
+            <div id="slides">
+                <img src="images/taeum6.png" alt="">
+                <img src="images/taeum11.png" alt="">
+                <img src="images/taeum3.png" alt="">
+                <button id="prev">&lang;</button>
+                <button id="next">&rang;</button>
+            </div>
 
         </div>
         <div id="contents">
             <div id="tabMenu">
-
+              <input type="radio" id="tab1" name="tabs" checked>
+              <label for="tab1">공지사항</label>
+              <input type="radio" id="tab2" name="tabs">
+              <label for="tab2">갤러리</label>
+              
+              <div id="notice" class="tabContent">
+                <h2>공지사항 내용입니다.</h2>
+                <ul>
+                  <li>사무실을 이전했습니다.</li>
+                  <li>[참가 모집] 카약 체험에 초대합니다.</li>
+                  <li>[참가 모집] 여름 방학 기간, 오름 체험단을 모집합니다.</li>
+                  <li>겨울, 추천 여행지</li>
+                  <li>가울, 추천 여행지</li>
+                </ul>
+              </div>
+              <div id="gallery" class="tabContent">
+                <h2>갤러리 내용입니다.</h2>
+                <ul>
+                  <li><img src="images/img-1.jpg"></li>
+                  <li><img src="images/img-2.jpg"></li>
+                  <li><img src="images/img-3.jpg"></li>
+                  <li><img src="images/img-1.jpg"></li>
+                  <li><img src="images/img-2.jpg"></li>
+                  <li><img src="images/img-3.jpg"></li>
+                </ul>
+              </div>
             </div>
             <div id="links">
 
@@ -49,5 +81,6 @@
 
         </footer>
     </div>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>

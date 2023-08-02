@@ -12,43 +12,51 @@ a {
 ul {
     list-style: none; /*불릿 기호 보이지 않게하기*/
 }
-#container{
-    margin: 0 auto;
-    width:90%;
-}
+#container {
+    margin:0 auto;  /* 화면 중앙에 배치 */
+    width:1200px;    /* 너비 */
+  }
+  
 
 /* 헤더 영역 */
 
 header{
     width:100%;
     height: 100px;
-    background-color: #07c;
+    background-color: #0c837b;
 }
 
 /* 로고 영역 */
 
 #logo {
-    font-family: 'Caveat', cursive;
     float: left;
-    width:20%;
+    width:250px;
     height: 100px;
     line-height: 100px; /*height 값과 같게 만들어서 세로로 중간ㅇ 오도록 함*/
-    padding-left: 1%; /*왼쪽 페딩 지정*/
-    font-size: 1.8vw;
+    padding-left: 20px; /*왼쪽 페딩 지정*/
 }
+#logo h1 {
+    font-family: 'Caveat', cursive;
+    font-weight:700;
+    font-size:40px;   /* 글자 크기 */
+    
+    color:#fff;   /* 글자 색*/
+    text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  }
 
 /* 내비게이션 영역  */
 
 nav {
-    float: right;
-    width: 75%;
-    height: 100px;
-    padding-top:40px;
+    float:right;   /* 오른쪽으로 플로팅 */
+    width:900px;   /*   너비 */  
+    height:100px;   /* 메뉴 영역 높이 */  
+    padding-top:40px;  /* 메뉴를 아래로 내리기 위해 */  
 }
 
 /*네비게이션 메뉴 속성*/
 #topMenu {
     height: 60px;
+    
 }
 #topMenu > li{
     float: left; /* 메뉴 항목을 왼쪽으로 플로팅*/   
@@ -88,6 +96,8 @@ nav {
 #topMenu>li:hover>ul{
     display: block;/*메인 메뉴 항목 위로 오버하면 표시*/
     z-index:10; /*가리지 않게 조정*/
+    left:20px;
+
 }
 #topMenu >li > ul> li>a:hover{
     color:#f00; /* 서브 메뉴 마우스 오버하면 색상 변경*/
@@ -99,10 +109,44 @@ nav {
     clear: both; /* 플로팅 해제  */
     width: 100%; /* 너비  */
     height: 300px;
-    background-color: orange;
+    /*background-color: orange;*/
     overflow: hidden; /* 영역 넘치면 감춤 */
+    position: relative;
 }
-
+#slides {
+    position:absolute;
+}
+#slides >img{
+    width: 100%;/* 너비*/
+    float:left; /* 가로로 배치*/
+}
+button {
+    position: absolute;
+    height: 100%; /*이미지 높이에 맞춤*/
+    top: 0;
+    border: none; /*태두리 없음*/
+    padding: 20px;
+    background-color: transparent; /* 투명한 배경 지정 */
+    color: #000; /* 화살표를 검은색으로 지정 */
+    font-weight: 800;/*화살표를 굵게 지정*/
+    font-size: 24px; /*화살표 크기 지정*/
+    opacity: 0.5; /* 화살표를 반투명하게 지정 */
+}
+#prev {
+    left: 0; /* 왼쪽으로 붙이기 */
+}
+#next {
+    right: 0;/* 오른쪽으로 붙이기 */
+}
+button:hover {
+    background-color: #222;/*배경색은 짙은 회색으로 변경*/
+    color: #fff;/*흰색 화살표*/
+    opacity: 0.6; /*불투명도 높임*/
+    cursor: pointer; /*포인터 모양*/
+}
+button:focus{
+    outline: 0; /*아웃라인 없앰*/
+}
 /* 콘텐츠 영역 */
 
 #contents{
@@ -113,9 +157,11 @@ nav {
 /* 탭 메뉴 영역  */
 #tabMenu {
     float: left;
-    width: 50%;
+    width: 600px;
     height: 100%;
-    background-color: violet;
+}
+#tabMenu input[type="radio"] {
+    display: none;
 }
 
 /* 퀵 링크 영역  */
