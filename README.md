@@ -16,4 +16,4 @@ JavaScript
 
 이 프로젝트는 깃허브 페이지로 배포되었습니다. 아래 링크를 통해 프로젝트를 확인하실 수 있습니다.
 
-[프로젝트 바로가기](https://github.com/auspicious0/Nursing_laws)
+[프로젝트 바로가기](https://auspicious0.github.io/Nursing_laws/)
